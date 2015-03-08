@@ -1,0 +1,26 @@
+error discription :
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository
+
+xxs@XXS-PC ~/gitWorking/gitStudy (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+error cause:
+1 没有使用origin指定远程目录，如需查看所有远程目录，使用git remote -v
+2 如果指定了origin远程目录，但在远程找不到，无法推送本地提交
+error solution
+在远端建立一个repository，名字为gitStudy
+在本地建立一个远端目录，并将其命名为origin
+git remote add origin "https://github.com/minglin2012/gitStudy.git"
+之后就可以调用git push将master push 到远端目录origin中。
+如果需要修改远端目录的地址使用git remote set-url <new-url>
+如果需要修改远端目录的名称，使用git remote rename old-name new-name
+如果需要删除远端目录，使用 git remote remove name
+
+

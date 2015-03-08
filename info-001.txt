@@ -1,0 +1,16 @@
+info discription : 
+Branch master set up to track remote branch master from origin.
+
+xxs@XXS-PC ~/gitWorking/gitStudy (master)
+$ git push -u origin master
+Username for 'https://github.com': minglin2012
+Password for 'https://minglin2012@github.com':
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+
+info cause:
+远程目录跟踪已设置，调用git push 时不用再使用-u
+
+info solution
+
+$git push origin master

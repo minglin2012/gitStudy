@@ -1,0 +1,11 @@
+info description :
+Everything up-to-date
+
+xxs@XXS-PC ~/gitWorking/gitStudy (master)
+$ git push origin master
+Username for 'https://github.com': minglin2012
+Password for 'https://minglin2012@github.com':
+Everything up-to-date
+
+info cause:
+远端已是最新提交，push没有任何意义
