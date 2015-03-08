@@ -1,0 +1,10 @@
+2015年3月7日22:16:31
+git branch --set-upstream dev origin/dev
+
+设置分支dev的远端对应orgin/dev
+
+相当于改变了文件
+git config -e
+[branch "dev"]
+	remote = origin
+	merge = refs/heads/dev

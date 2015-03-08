@@ -1,0 +1,8 @@
+2015-3-8.txt
+git config 
+设置git的配置信息
+git config --system -e 相当于修改文件c:\program files (x86)\git\etc\gitconfig
+git config --global -e 相当于修改文件~\.gitConfig
+git config -e 相当于修改文件 ~\myDir\.git\config
+
+
