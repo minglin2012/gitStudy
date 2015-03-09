@@ -1,0 +1,31 @@
+﻿learn-005
+
+<git remote> 添加，修改重命名远程链接
+
+// 设置为本地仓库添加远端仓库链接，名称为origin
+git remote add origin "https://github.com/minglin2012/gitexample.git"
+
+// 修改本地仓库的远程仓库链接地址
+git remote origin set-url "https:/github.com/minglin2012/gitexamples_back.git"
+或者(参见git remote set-url)
+git remote set-url origin "https:/github.com/minglin2012/gitexamples_back.git"
+
+// 修改本地仓库的远程链接名
+git remote rename origin ori
+
+// 删除远程仓库
+git remote remove origin
+
+<git remote set-url> 为remote 添加，修改URL，调用是remote必须存在
+// 为本地仓库远端添加一个url
+git remote set-url --add origin  "https:/github.com/minglin2012/gitexamples_back.git"
+(remote origin 必须存在)
+
+//为本次仓库远端修改URL
+git remote set-url origin "https:/github.com/minglin2012/gitexamples_back.git"
+或者
+git remote set-url --push origin "https:/github.com/minglin2012/gitexamples_back.git"
+
+// 为本地仓库远端删除URL（仅当origin远端存在并且有多个push URL时）
+git remote set-url --delete origin "https:/github.com/minglin2012/gitexamples_back.git"
+
