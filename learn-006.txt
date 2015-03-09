@@ -1,0 +1,17 @@
+﻿learn-006
+
+git reset
+git rebase
+git revert
+
+git reset 穿越历史
+git reset head@{1} 回溯到上一次提交的版本
+注意:通过版本的id信息可以任意穿越，但时间点之后的提交将不会出现在log中，但会保留在reflog中。
+
+git rebase 重新设置起点
+git checkout origin
+git rebase dev 找到origin和dev分支的公共祖先，将origin分支上该祖先之后的提交全部更新，使之合并dev分支的功能。
+
+
+git revert 取消提交（反提交）
+git revert head@{1} 将倒数第二次提交取消，并生产一个revert commit
