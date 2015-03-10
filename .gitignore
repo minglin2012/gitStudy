@@ -1,0 +1,7 @@
+#ignore *.o, *.a file
+
+*.[oa]
+
+#ignore debug file and debug directory
+debug
+debug/
