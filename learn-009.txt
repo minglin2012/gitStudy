@@ -1,0 +1,22 @@
+
+//查看远程仓库分支
+git branch -r
+
+//回退远端版本,push有风险，所以要加 --force
+git clone "<remote-url>"
+git checkout <branch>
+git reset HEAD@{1}
+git push origin <branch>:<branch> --force
+
+//更新本地的分支
+git fetch
+或者git pull
+
+//将本地分支推送到远端分支
+git push origin <branch>:<remote-branch>
+
+//删除远端分支
+git push origin :<remote-branch>
+
+//查看分支树形结构
+git log --graph --decorate --all --pretty=oneline
